@@ -1,15 +1,34 @@
-<h1>Employee Details</h1>
-<label>
-    <b>Name:  </b> {{empDetails.name}}
-</label>
-<br/>
-<label>
-    <b>Date of birth:  </b>{{empDetails.dob}}
-</label>
-<br/>
-<label>
-    <b>Gender:  </b>{{empDetails.gender}}
-</label>
-<br>
-<br>
-<button type="button" ng-click="editDetails('/edit');" style="height: 30px;width: 90px">Edit</button>
+<div class="container">
+    <div class="jumbotron" align="center">
+        <h2>Employee Details</h2>
+    </div>
+    <div class="detailsAlign">
+    <div class="row">
+        <label class="col-md-3">
+            <h4>Name:  </h4>
+        </label>
+        <label class="col-md-9">
+            <h4>{{empDetails.name}}</h4></label>
+    </div>
+    <div class="row">
+        <label class="col-md-3">
+            <h4>Date of birth:  </h4>
+        </label>
+        <label class="col-md-9">
+            <h4>{{empDetails.dob}}</h4>
+        </label>
+    </div>
+    <div class="row">
+        <label class="col-md-3">
+            <h4>Gender:  </h4>
+        </label>
+        <label class="col-md-9">
+            <h4>{{empDetails.gender}}</h4>
+        </label>
+    </div>
+    <br>
+    <div class="row">
+      <button type="button" ng-click="editDetails('/edit');" class="btn btn-primary editStyle">Edit</button>
+    </div>
+    </div>
+</div>
